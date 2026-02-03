@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Diagnostic Content Strip</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { background: transparent; }
+    .container {
+      width: 390px;
+      min-height: 844px;
+      overflow: hidden;
+    }
+    .content {
+      width: 100%;
+      background: linear-gradient(to bottom, #002855, #003875);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <!-- Header -->
+      <div style="padding: 48px 24px 24px 24px;">
+        <div style="display: flex; align-items: center; gap: 8px; color: white; margin-bottom: 24px;">
+          <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+          </svg>
+          <span style="font-size: 14px;">Back to Health</span>
+        </div>
+
+        <div style="display: flex; align-items: flex-start; gap: 16px;">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(255,59,48,0.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <svg width="24" height="24" fill="none" stroke="#FF3B30" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+            </svg>
+          </div>
+          <div>
+            <h1 style="font-size: 24px; color: white; margin-bottom: 8px; font-weight: 400;">Check Engine Light</h1>
+            <p style="color: #FFC72C; font-size: 14px;">Action Required</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Issue Card -->
+      <div style="padding: 0 24px 24px 24px;">
+        <div style="background: white; border-radius: 16px; padding: 24px; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
+          <div style="margin-bottom: 24px;">
+            <h2 style="font-size: 18px; color: #002855; margin-bottom: 12px;">What's Wrong?</h2>
+            <p style="color: #002855; margin-bottom: 8px; font-size: 15px;">
+              Your oxygen airflow sensor is damaged.
+            </p>
+            <p style="color: #666; font-size: 13px;">
+              Detected: December 3, 2024 at 9:42 AM
+            </p>
+          </div>
+
+          <div style="border-top: 1px solid #e5e7eb; padding-top: 24px; margin-bottom: 24px;">
+            <h2 style="font-size: 18px; color: #002855; margin-bottom: 12px;">Why This Matters</h2>
+            <p style="color: #374151; font-size: 14px; line-height: 1.6;">
+              Your engine is not reliably able to tell if it is getting the right amount of oxygen.
+              This can lead to loss of power and poor gas mileage.
+            </p>
+          </div>
+
+          <div style="border-top: 1px solid #e5e7eb; padding-top: 24px;">
+            <h2 style="font-size: 18px; color: #002855; margin-bottom: 16px;">Impact on Your Car</h2>
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+              <div style="display: flex; align-items: flex-start; gap: 12px;">
+                <div style="width: 8px; height: 8px; border-radius: 50%; background: #FF3B30; margin-top: 6px; flex-shrink: 0;"></div>
+                <div>
+                  <p style="font-size: 14px; color: #002855;">Reduced fuel efficiency</p>
+                  <p style="font-size: 12px; color: #666;">Up to 15-20% worse gas mileage</p>
+                </div>
+              </div>
+              <div style="display: flex; align-items: flex-start; gap: 12px;">
+                <div style="width: 8px; height: 8px; border-radius: 50%; background: #FF3B30; margin-top: 6px; flex-shrink: 0;"></div>
+                <div>
+                  <p style="font-size: 14px; color: #002855;">Loss of power</p>
+                  <p style="font-size: 12px; color: #666;">Especially during acceleration</p>
+                </div>
+              </div>
+              <div style="display: flex; align-items: flex-start; gap: 12px;">
+                <div style="width: 8px; height: 8px; border-radius: 50%; background: #FF3B30; margin-top: 6px; flex-shrink: 0;"></div>
+                <div>
+                  <p style="font-size: 14px; color: #002855;">May not pass emissions test</p>
+                  <p style="font-size: 12px; color: #666;">Required for registration in some states</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Cost Card -->
+      <div style="padding: 0 24px 24px 24px;">
+        <div style="background: #FFC72C; border-radius: 16px; padding: 24px; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+            <svg width="24" height="24" fill="none" stroke="#002855" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+            <h2 style="font-size: 18px; color: #002855;">Recommended Service</h2>
+          </div>
+          <p style="color: #002855; margin-bottom: 16px; font-size: 15px;">
+            Replace oxygen sensor and clear diagnostic codes
+          </p>
+          <div style="display: flex; align-items: baseline; gap: 8px; margin-bottom: 4px;">
+            <svg width="20" height="20" fill="none" stroke="#002855" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <span style="font-size: 30px; color: #002855; font-weight: 500;">250</span>
+          </div>
+          <p style="font-size: 14px; color: rgba(0,40,85,0.7);">Parts and labor included</p>
+        </div>
+      </div>
+
+      <!-- Book Service Button -->
+      <div style="padding: 0 24px 32px 24px;">
+        <button style="width: 100%; background: white; color: #002855; padding: 16px; border-radius: 12px; border: none; font-size: 16px; font-weight: 500; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
+          Book Service Appointment
+        </button>
+        <p style="text-align: center; color: rgba(255,255,255,0.6); font-size: 12px; margin-top: 12px;">
+          Available appointments at your local CarMax Service Center
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
